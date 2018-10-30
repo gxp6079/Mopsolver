@@ -19,9 +19,9 @@ int build_maze(char **maze){
     while((c = getchar()) != EOF){
         if(c != '\n'){
             if(M == 0){
-                maze[N] = malloc(sizeof(char));
+                maze[N] = malloc(sizeof(char) + 1);
             }else{
-                maze[N] = realloc(maze[N], sizeof(char));
+                maze[N] = realloc(maze[N], (M+1)*sizeof(char));
             }
             maze[N][M] = (char)c;
             M++;
@@ -39,7 +39,7 @@ int build_maze(char **maze){
  * @param col - column size of the array
  * @param ** visited - a 2D array where the information will be added;
  */
-void build_visited(int row, int col, int ** visited){
+void build_visited(int row, int col, int visited[row][col]){
     for (int i = 0; i < row ; ++i) {
         for (int j = 0; j < col ; ++j) {
             visited[i][j] = 0;
@@ -54,7 +54,7 @@ void build_visited(int row, int col, int ** visited){
  * @param **maze - a 2D array where the maze information is stored
  * @return 1 if solvable 0 otherwise
  */
-int solvable(int row, int col, char ** maze, int ** visited){
+int solvable(int row, int col, char maze[row][col], int visited[row][col]){
     int N = sizeof(maze) / sizeof(maze[0]);
     int M = sizeof(maze[0])/N;
     if(row == (N-1) && col == (M-1)){

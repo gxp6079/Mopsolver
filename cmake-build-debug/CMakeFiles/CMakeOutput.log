@@ -149,3 +149,4 @@ Linking C executable cmTC_36e6d
     Feature record: C_FEATURE:0c_restrict
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
+The system is: Darwin - 18.0.0 - x86_64
