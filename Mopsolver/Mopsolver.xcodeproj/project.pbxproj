@@ -28,6 +28,7 @@
 		159B8C41218795D10001085F /* main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 2415919360; path = main.c; sourceTree = "<group>"; };
 		159B8C482187D6260001085F /* queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
 		159B8C492187D6260001085F /* queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = queue.c; sourceTree = "<group>"; };
+		15B9DE03218A6B84008B9224 /* exp.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = exp.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				159B8C41218795D10001085F /* main.c */,
 				159B8C482187D6260001085F /* queue.h */,
 				159B8C492187D6260001085F /* queue.c */,
+				15B9DE03218A6B84008B9224 /* exp.txt */,
 			);
 			path = Mopsolver;
 			sourceTree = "<group>";

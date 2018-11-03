@@ -9,20 +9,30 @@
 #ifndef queue_h
 #define queue_h
 
-#include <stdio.h>
+typedef struct Tuple_S * Tuple;
 
 typedef struct Node_S * Node;
 
 typedef struct Queue_S * Queue;
 
+Tuple createTuple(int val1, int val2);
+
+int getVal1(Tuple t);
+
+int getVal2(Tuple t);
+
+Tuple getParent(Tuple t);
+
+void addParent(Tuple t, Tuple parent);
+
 Queue createQueue();
 
 size_t sizeQueue(Queue queue);
 
-const int topQueue(Queue queue);
+Tuple dequeue(Queue queue);
 
-const int removeTopQueue(Queue queue);
+void enqueue(Queue queue, Tuple item);
 
-void addItem(Queue queue, int item);
+void destroyQueue(Queue q);
 
 #endif /* queue_h */
